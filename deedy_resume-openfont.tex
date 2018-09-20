@@ -1,0 +1,232 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\header{Yingjie(Jack)}{Lian}
+       {(435)-703-8895 / Email: yingjielian0613@gmail.com}
+       {GitHub: https://github.com/yingjielian}
+       {LinkedIn: https://www.linkedin.com/in/ylian}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.34\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{EDUCATION} 
+
+\subsection{University of Utah }
+\descript{BS in Computer Science}
+\location{Expected Dec 2019 | Salt Lake City, UT}
+\sectionsep
+
+\subsection{Dixie State University}
+\descript{AS in Computer Science}
+\location{Graduated Dec 2015 | St.George, UT}
+\sectionsep
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{COURSEWORK}
+Foundation of Data Analysis \\
+Web Software Architect \\
+Computer Graphics \\
+Object-Oriented Programming \\
+Scientific Computation  \\
+Algorithms and Data Structures\\
+\sectionsep
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{SKILLS}
+\subsection{Programming}
+Java \textbullet{}   Python \textbullet{} C\fontseries{b}\selectfont\# \textbullet{} Matlab \textbullet{} MySQL \\
+C++ \textbullet{} HTML/CSS  \\ 
+\sectionsep
+\subsection{Software Tools}
+Jira \textbullet{}   Fiddler \textbullet{} Sourcetree \textbullet{} vCenter \\ Bugzilla \textbullet{} Putty \textbullet{} GoCD \textbullet{} Slack \\
+Webex
+\sectionsep
+\subsection{Work Environments}
+Windows \textbullet{}   Linux \textbullet{} OS X
+\sectionsep
+\subsection{Development Environments}
+Eclipse \textbullet{}   NetBeans \textbullet{} Visual Studio \textbullet{} Atom \\ AWS Cloud9
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{EXPERIENCE}
+
+\runsubsection{Symantec}
+\descript{| Software Engineering Intern }
+\location{Mar 2018 - Sep 2018 | Draper, UT}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Maintained and deployed the GoCD test pipeline by directions and regularly ran the pipeline to help the manager keep the results up to date
+\item Increased 29\% test efficiency for the WebPulse team's Sitereview product by using Java Selenium library to
+automate over 90 test-cases(UI tests)
+\item Communicated feature development to the wider QA team and provide documentation where necessary
+\item Reported 8 bugs to the Development team and assisted them in repairing those bugs by using Jira and Bugzilla in order to enhance the customer experience
+\item Automated 7 API tests by parsing XML and JSON files to make sure the data was updated from the database
+\end{tightemize}
+\sectionsep
+
+\runsubsection{University of Utah}
+\descript{| Software Engineering Intern }
+\location{Oct 2017 - Mar 2018 | Salt Lake City, UT}
+\begin{tightemize}
+\item Developed and maintained documentation to comply with the department's quality assurance standard practices using Selenium Web-Driver
+\item Designed and implemented an architecture for automating the tests for Faculty Activity Report (https://faculty.utah.edu/) and Mission-Based Management (https://uofuhealth.utah.edu/mbm/)
+\item Contributed over 3000 lines codes on various technical activities such as writing test plans and developing test scripts, maintaining and running automated tests to build a library of reusable tests\end{tightemize}
+\sectionsep
+
+\runsubsection{University of Utah}
+\descript{| Facility Manager}
+\location{Mar 2017 - Oct 2017 | Salt Lake City, UT}
+\begin{tightemize}
+\item Supervised 150+ facility guests in the Core area, ensuring patron satisfaction
+\item Prepared monthly employee performance reports in order to help the manager keep the database up to date
+\item Assisted 10+ new employees' training and assisted them to get into a routine for their tasks which enhances the team relation
+\end{tightemize}
+\sectionsep
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{CLASS PROJECTS}
+\runsubsection{Spreadsheet App}
+\location{Jan 2018 - May 2018 | Salt Lake City, UT}
+\begin{tightemize}
+\item Completed the Unit tests, data store and open file part for this app by generating XML files with a group of 4 people
+\item Coded in C# using Model-View-Controller architecture
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Tower Defense App}
+\location{Jan 2017 - May 2017  | Salt Lake City, UT}
+\begin{tightemize}
+\item Implemented Fire-to-Disappear(Towers to Enemies) function, with a reset button and points and lives counting operations
+\item Coded in Java using extending classes, existing interfaces, and advanced language constructs such as super classes
+\end{tightemize}
+\sectionsep
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     AWARDS
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2014	     & top 52/2500  & KPCB Engineering Fellow\\
+% 2014	     & 2\textsuperscript{nd} most points  & Google Code Jam, Qualification Round\\
+% 2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+% 2013	     & National  & Jump Trading Challenge Finalist\\
+% 2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+% 2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+% 2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+% 2010     & National & Comp. Soc. of India's National Programming Contest\\
+% \end{tabular}
+% \sectionsep
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     SOCIETIES
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Societies} 
+
+% \begin{tabular}{rll}
+% 2014 	& top 12\%ile    & Tau Beta Pi Engineering Honor Society\\
+% 2014   & National   & The Global Leadership and Education Forum (tGELF)\\
+% 2012   &  National  & Golden Key International Honor Society\\
+% 2012   &  National   & National Society of Collegiate Scholars\\
+% \end{tabular}
+% \sectionsep
+
+\end{minipage} 
+\end{document}
